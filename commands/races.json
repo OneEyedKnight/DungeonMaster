@@ -1,0 +1,122 @@
+{
+    "Dragonborn": {
+        "title": "",
+        "description": "Born of dragons, as their name proclaims, the dragonborn walk proudly through a world that greets them with fearful incomprehension. \n\nShaped by draconic gods or the dragons themselves, dragonborn originally hatched from dragon eggs as a unique race, combining the best attributes of dragons and humanoids. \n\nSome dragonborn are faithful servants to true dragons, others form the ranks of soldiers in great wars, and still others find themselves adrift, with no clear calling in life.",
+        "color": "PURPLE",
+        "author": {
+            "name": "Dragonborn",
+            "icon_url": "https://i.imgur.com/Jpo1mq7.png"
+        },
+        "thumbnail": {
+            "url": ""
+        },
+        "image": {
+            "url": "https://www.dndbeyond.com/avatars/thumbnails/6/340/420/618/636272677995471928.png"
+        },
+        "fields": [
+            {
+                "name": "Ability Score Increase",
+                "value": "Your Strength score increases by 2, and your Charisma score increases by 1.",
+                "inline": false
+            },
+            {
+                "name": "Age",
+                "value": "Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80.",
+                "inline": false
+            },
+            {
+                "name": "Size",
+                "value": "Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.",
+                "inline": false
+            },
+            {
+                "name": "Speed",
+                "value": "Your base walking speed is 30 feet.",
+                "inline": false
+            },
+            {
+                "name": "Breath Weapon",
+                "value": "You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation. When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can’t use it again until you complete a short or long rest.",
+                "inline": false
+            },
+            {
+                "name": "Damage Resistance",
+                "value": "You have resistance to the damage type associated with your draconic ancestry.",
+                "inline": false
+            },
+            {
+                "name": "Languages",
+                "value": "You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants.",
+                "inline": false
+            }
+        ]
+    },
+
+    "Dwarf": {
+        "title": "",
+        "description": "Kingdoms rich in ancient grandeur, halls carved into the roots of mountains, the echoing of picks and hammers in deep mines and blazing forges, a commitment to clan and tradition, and a burning hatred of goblins and orcs—these common threads unite all dwarves.",
+        "color": "PURPLE",
+        "author": {
+            "name": "Dwarf",
+            "icon_url": "https://i.imgur.com/Jpo1mq7.png"
+        },
+        "image": {
+            "url": "https://www.dndbeyond.com/avatars/thumbnails/6/254/420/618/636271781394265550.png"
+        },
+        "fields": [
+            {
+                "name": "Ability Score Increase",
+                "value": "Your Constitution score increases by 2.",
+                "inline": false
+            },
+            {
+                "name": "Age",
+                "value": "Dwarves mature at the same rate as humans, but they’re considered young until they reach the age of 50. On average, they live about 350 years.",
+                "inline": false
+            },
+            {
+                "name": "Size",
+                "value": "Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.",
+                "inline": false
+            },
+            {
+                "name": "Speed",
+                "value": "Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.",
+                "inline": false
+            },
+            {
+                "name": "Darkvision",
+                "value": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.",
+                "inline": false
+            },
+            {
+                "name": "Dwarven Resilience ",
+                "value": "You have advantage on saving throws against poison, and you have resistance against poison damage",
+                "inline": false
+            },
+            {
+                "name": "Dwarven Combat Training",
+                "value": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.\n\n",
+                "inline": false
+            },
+            {
+                "name": "Tool Proficiency",
+                "value": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools.",
+                "inline": false
+            },
+            {
+                "name": "Languages",
+                "value": "You can speak, read, and write Common and Dwarvish. Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak.",
+                "inline": false
+            }
+        ]
+    },
+
+    "Elf": {
+
+    },
+
+    "Gnome": {
+
+    }
+}

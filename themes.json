@@ -1,0 +1,44 @@
+{
+    "desert": {
+        "ambience": "https://www.youtube.com/watch?v=5vTEHnfvUQs", 
+        "battle": "https://www.youtube.com/watch?v=0tfGjnV7g9U", 
+        "night": "https://www.youtube.com/watch?v=m37SPQKreDE"
+    },
+    "artic": {
+        "ambience": "https://www.youtube.com/watch?v=zZpz63SNyaY",
+        "battle": "https://www.youtube.com/watch?v=ytOOyloc-80",
+        "night": "https://www.youtube.com/watch?v=b6pD07XtDBA"
+    },
+    "forest": {
+        "ambience": "https://www.youtube.com/watch?v=43S0PzM_y0o",
+        "battle": "https://www.youtube.com/watch?v=ZcNyPdipjeU",
+        "night": "https://www.youtube.com/watch?v=hiEt4Oj-AIw"
+    },
+    "jungle": {
+        "ambience": "https://www.youtube.com/watch?v=zQtfnPTlFFE",
+        "battle": "https://www.youtube.com/watch?v=zQtfnPTlFFE",
+        "night": "https://www.youtube.com/watch?v=lLwWUxduMTM"
+    },
+    "underdark": {
+        "ambience": "https://www.youtube.com/watch?v=NMUoicf5kYw&t=2829s",
+        "battle": "https://youtube.com/watch?v=QV2uFgIrklk"
+    },
+    "feywild": {
+        "ambience": "https://www.youtube.com/watch?v=LwGyIIZQ_PM",
+        "battle": "https://www.youtube.com/watch?v=7bfku8OlIlU",
+        "night": "https://www.youtube.com/watch?v=XxEhuSJF780"
+    },
+    "lowerplanes": {
+        "ambience": "https://www.youtube.com/watch?v=JzVIkY5tKcE",
+        "battle": "https://www.youtube.com/watch?v=eYxB527-lF4"
+    },
+    "upperplanes": {
+        "ambience": "https://www.youtube.com/watch?v=RG1ydqEEa0c",
+        "battle": "https://www.youtube.com/watch?v=MuJTjKwuZb4"
+    },
+    "underwater": {
+        "ambience": "https://www.youtube.com/watch?v=PrSXb44xu0s",
+        "battle": "https://www.youtube.com/watch?v=e9mfzLW7N6o",
+        "night": "https://www.youtube.com/watch?v=OVct34NUk3U"
+    }
+}
