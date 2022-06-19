@@ -4,8 +4,10 @@ const { createAudioPlayer, AudioPlayerStatus, getVoiceConnection } = require('@d
 const { Client, Intents, Collection } = require('discord.js');
 const config = require('./config.json');
 
-const bot = new Client({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, 
-	Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_VOICE_STATES]});
+const bot = new Client({intents: [
+	Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, 
+	Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_VOICE_STATES]
+});
 
 bot.commands = new Collection();
 bot.player = createAudioPlayer();
@@ -20,8 +22,19 @@ for (const file of commandFiles) {
 	bot.commands.set(command.data.name, command);
 }
 
+let status = [
+	'Dungeons & Dragons', 'Board Games', 
+	'/help', 'Chess', 'Coup', 'Connect 4', 
+	'Scrabble', 'UNO', 'Checkers', 'with you', 
+	'with your mom'
+];
+
 bot.once('ready', () => {
-	console.log('Let the adventure begin.');
+	console.log('\n \nLet the adventure begin. \n');
+	console.log(`Running on discord.js version ${require('discord.js').version} \n \n`);
+	bot.user.setActivity(status[Math.floor(Math.random() * status.length)]);
+	//bot.application.commands.set([]);
+
 });
 
 bot.on('interactionCreate', async inter => {

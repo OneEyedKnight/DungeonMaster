@@ -33,8 +33,7 @@ class Paginator {
     }
 
     async paginate() {
-        //const buttons = buttons();
-        const filter = i => i.user.id === this.inter.member.id;
+        const filter = i => i.user.id === this.inter.member.id && this.inter.isButton();
 
         const collector = this.inter.channel.createMessageComponentCollector(filter, {componentType: 'BUTTONS', time: 150});
 
@@ -44,13 +43,17 @@ class Paginator {
 
         await this.inter.reply({embeds: [this.info()], components: [this.buttons()]});
 
+        let buttons = ['back', 'next', 'start', 'end', 'exit'];
+
         collector.on('collect', async i => {
-            switch (i.customId) {
-                case 'next': await i.update({embeds: [this.pages[this.current !== (this.pages.length - 1) ? ++this.current: this.current = 0]]}); break;
-                case 'back': await i.update({embeds: [this.pages[this.current !== 0 ? --this.current: this.current = this.pages.length - 1]]}); break;
-                case 'start': await i.update({embeds: [this.pages[0]]}); break;
-                case 'end': await i.update({embeds: [this.pages[this.pages.length - 1]]}); break;
-                case 'exit': await i.message.delete();
+            if (buttons.includes(i.customId)) {
+                switch (i.customId) {
+                    case 'next': await i.update({embeds: [this.pages[this.current !== (this.pages.length - 1) ? ++this.current: this.current = 0]]}); break;
+                    case 'back': await i.update({embeds: [this.pages[this.current !== 0 ? --this.current: this.current = this.pages.length - 1]]}); break;
+                    case 'start': await i.update({embeds: [this.pages[0]]}); break;
+                    case 'end': await i.update({embeds: [this.pages[this.pages.length - 1]]}); break;
+                    case 'exit': await i.message.delete();
+                }
             }
         });
     }

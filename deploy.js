@@ -11,7 +11,6 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 for (const file of commandFiles) {
 	const filePath = path.join(commandsPath, file);
 	const command = require(filePath);
-	console.log(`${command.data.name} \n \n`);
 	commands.push(command.data.toJSON());
 }
 
@@ -22,7 +21,7 @@ const rest = new REST({ version: '9' }).setToken(config.token);
 		console.log('Started refreshing application (/) commands.');
 
 		await rest.put(
-			Routes.applicationGuildCommands(config.client, config.guild),
+			Routes.applicationCommands(config.client),
 			{ body: commands },
 		);
 
